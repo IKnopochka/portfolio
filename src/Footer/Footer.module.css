@@ -1,0 +1,20 @@
+.main{
+    height: 30vh;
+    background-color: #774793;
+}
+.footerContainer{
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.footerBlock{
+    border: 1px solid;
+    height: 80px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 60px;
+    height: 80%;
+    background-color: lemonchiffon;
+}
