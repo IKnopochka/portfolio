@@ -1,0 +1,9 @@
+.main{
+    height: 15vh;
+    background-color: #184f6b;
+}
+.freelanceContainer{
+    justify-content: flex-start;
+    flex-direction: column;
+
+}

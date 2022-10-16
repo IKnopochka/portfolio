@@ -1,0 +1,8 @@
+.main{
+    height: 50vh;
+    background-color: #4b9347;
+}
+.contactsContainer{
+    justify-content: flex-start;
+    flex-direction: column;
+}
