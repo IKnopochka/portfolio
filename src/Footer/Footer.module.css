@@ -8,7 +8,7 @@
 }
 .footerPic{
     border: 1px solid;
-    width: 100%;
+    width: 280px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
