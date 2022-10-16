@@ -1,5 +1,5 @@
 .main{
-    height: 25vh;
+    min-height: 25vh;
     background-color: #184f6b;
 }
 .footerContainer{
@@ -13,7 +13,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.icon{
+.imageContainer{
     width: 50px;
     height: 50px;
     background-color: lemonchiffon;

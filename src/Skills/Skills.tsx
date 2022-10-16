@@ -12,6 +12,8 @@ const Skills = () => {
                     <SkillBlock title={"JS"} description={'djdrhgsdfvsdfsfkj sdhfkshf kjhskhs dkfghkdjg hkjsdhfiu aoudhus sgiuh sufhsidrf hsdhsgb'}/>
                     <SkillBlock title={'CSS'} description={'djhbgisfb'}/>
                     <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
+                    <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
+                    <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
                 </div>
             </div>
         </div>

@@ -6,9 +6,18 @@
     align-items: center;
     text-align: center;
 }
-.icon{
+.imageContainer{
     height: 180px;
     width: 100%;
     background-color: #e6c0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.imageLink{
+
 }
 .description{}
