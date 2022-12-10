@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactsInputArea from "./ContactsInputArea/ContactsInputArea";
-import styles from './Contacts.module.css'
+import styles from './Contacts.module.scss'
 import stylesContainer from "../Common/styles/Container.module.css";
 
 const Contacts = () => {
@@ -11,7 +11,7 @@ const Contacts = () => {
                 <div>
                     <ContactsInputArea/>
                 </div>
-                <button>Send</button>
+
             </div>
         </div>
     );

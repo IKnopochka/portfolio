@@ -1,6 +1,10 @@
+@import '../Common/styles/mixin';
+
 .main{
+    @include bgColor(180deg);
+
     min-height: 25vh;
-    background-color: #184f6b;
+
 }
 .footerContainer{
     justify-content: flex-start;

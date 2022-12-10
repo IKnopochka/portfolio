@@ -1,6 +1,10 @@
+@import "../Common/styles/_mixin.scss";
+
 .skillsBlock {
+    @include bgColor(180deg);
+
     min-height: 100vh;
-    background-color: cornflowerblue;
+
 }
 
 .skillsContainer {

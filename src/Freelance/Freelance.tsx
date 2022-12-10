@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Freelance.module.css'
+import styles from './Freelance.module.scss'
 import stylesContainer from "../Common/styles/Container.module.css";
 
 const Freelance = () => {

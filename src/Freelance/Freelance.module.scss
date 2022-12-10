@@ -1,6 +1,10 @@
+@import '../Common/styles/mixin';
+
 .main{
+    @include bgColor(180deg);
+
     height: 15vh;
-    background-color: #184f6b;
+
 }
 .freelanceContainer{
     justify-content: flex-start;

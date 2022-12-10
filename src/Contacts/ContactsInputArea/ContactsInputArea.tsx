@@ -7,7 +7,8 @@ const ContactsInputArea = () => {
             <form action="/action_page.php">
                 <input type="text" id="name" name="name"/>
                 <input type="email" id="email" name="email"/>
-                <textarea></textarea>
+                <textarea/>
+                <button type={'submit'}>Send</button>
             </form>
         </div>
     );

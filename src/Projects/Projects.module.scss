@@ -1,6 +1,9 @@
+@import '../Common/styles/mixin';
+
 .main {
+    @include bgColor(0deg);
+
     min-height: 100vh;
-    background-color: coral;
 }
 .projectsMainBlock {
     justify-content: flex-start;
@@ -13,3 +16,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1129px) {
+    .projects {
+        justify-content: center;
+    }
+}
+
+
+
+
