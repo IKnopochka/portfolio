@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SkillBlock.module.css'
+import styles from './SkillBlock.module.scss'
 
 type SkillPropsType = {
     title: string

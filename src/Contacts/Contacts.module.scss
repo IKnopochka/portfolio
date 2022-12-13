@@ -1,12 +1,14 @@
 @import '../Common/styles/mixin';
 
-.main{
-    @include bgColor(0deg);
+.main {
+  @include bgColor(0deg);
+  height: 50vh;
+  @include container;
+  justify-content: flex-start;
+  flex-direction: column;
 
-    height: 50vh;
+  .mainTitle{
+    @include mainTitle;
+  }
 
-}
-.contactsContainer{
-    justify-content: flex-start;
-    flex-direction: column;
 }

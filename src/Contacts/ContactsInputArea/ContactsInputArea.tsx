@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContactsInputArea.module.css'
+import styles from './ContactsInputArea.module.scss'
 
 const ContactsInputArea = () => {
     return (

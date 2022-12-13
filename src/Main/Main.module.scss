@@ -1,17 +1,19 @@
 @import '../Common/styles/mixin';
 
-.mainBlock{
+.block{
     @include bgColor(0deg);
-
+    @include container();
     height: 100vh;
+
+    .text{
+        width: 300px;
+        background-color: peachpuff;
+    }
+    .photo{
+         width: 300px;
+         height: 400px;
+         background-color: peachpuff;
+     }
 }
 
-.text{
-    width: 300px;
-    background-color: peachpuff;
-}
-.photo{
-    width: 300px;
-    height: 400px;
-    background-color: peachpuff;
-}
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ProjectBlock.module.css';
+import styles from './ProjectBlock.module.scss';
 
 type ProjectBlockPropsType = {
     title: string

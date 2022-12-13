@@ -2,12 +2,11 @@
 
 .main{
     @include bgColor(180deg);
-
     height: 15vh;
-
-}
-.freelanceContainer{
+@include container;
     justify-content: flex-start;
     flex-direction: column;
-
+    .mainTitle{
+        @include mainTitle;
+    }
 }

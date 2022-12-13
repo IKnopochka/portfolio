@@ -1,27 +1,31 @@
 @import '../Common/styles/mixin';
 
 .main {
-    @include bgColor(0deg);
+  @include bgColor(0deg);
+  min-height: 100vh;
+  @include container;
+  justify-content: flex-start;
+  flex-direction: column;
 
-    min-height: 100vh;
-}
-.projectsMainBlock {
-    justify-content: flex-start;
-    flex-direction: column;
-}
-.projects {
-    border: 1px solid;
+  .mainTitle {
+    @include mainTitle;
+  }
+
+  .projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 1129px) {
+      justify-content: center;
+    }
+  }
+
 }
 
-@media screen and (max-width: 1129px) {
-    .projects {
-        justify-content: center;
-    }
-}
+
+
+
 
 
 

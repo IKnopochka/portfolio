@@ -2,22 +2,24 @@
 
 .skillsBlock {
     @include bgColor(180deg);
-
     min-height: 100vh;
+    @include container();
 
-}
-
-.skillsContainer {
     justify-content: flex-start;
     flex-direction: column;
+
+    .mainTitle{
+        @include mainTitle()
+    }
+    .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
 }
 
-.skills {
-    border: 1px solid;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
+
+
 
