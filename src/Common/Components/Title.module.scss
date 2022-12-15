@@ -1,0 +1,19 @@
+@import "../../Common/styles/mixin";
+
+.titleContainer {
+  @include titleContainer;
+
+  .mainTitle {
+    @include mainTitle;
+  }
+
+  .subTitle {
+    .pronounWord {
+      @include subPronounWord;
+    }
+
+    .mainWord {
+      @include subMainWord;
+    }
+  }
+}

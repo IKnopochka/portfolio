@@ -1,14 +1,17 @@
 @import '../Common/styles/mixin';
 
-.main {
+.segment {
   @include bgColor(0deg);
-  height: 50vh;
-  @include container;
-  justify-content: flex-start;
-  flex-direction: column;
+  min-height: 50vh;
 
-  .mainTitle{
-    @include mainTitle;
+  .block {
+    @include container();
+
+
+    .skills {
+      @include worksBox;
+    }
   }
+
 
 }

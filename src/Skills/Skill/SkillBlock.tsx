@@ -9,9 +9,19 @@ type SkillPropsType = {
 const SkillBlock = (props: SkillPropsType) => {
     return (
         <div className={styles.skill}>
-            <div className={styles.imageContainer}></div>
-            <h3>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            <h3 className={styles.name}>{props.title}</h3>
+            <span className={styles.text}>{props.description}</span>
+            <div className={styles.dots}>
+                <div className={styles.dot}>
+                    <span/>
+                </div>
+
+            </div>
+            <div className={styles.value}>
+                <span className={styles.num}>85
+                    <span>%</span>
+                </span>
+            </div>
         </div>
     );
 };

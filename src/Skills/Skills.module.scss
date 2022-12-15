@@ -1,23 +1,18 @@
 @import "../Common/styles/_mixin.scss";
 
-.skillsBlock {
-    @include bgColor(180deg);
-    min-height: 100vh;
+.segment {
+  @include bgColor(180deg);
+  min-height: 65vh;
+
+  .block {
     @include container();
 
-    justify-content: flex-start;
-    flex-direction: column;
-
-    .mainTitle{
-        @include mainTitle()
-    }
     .skills {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        box-sizing: border-box;
+      @include worksBox;
     }
+  }
+
+
 }
 
 

@@ -1,26 +1,22 @@
 @import '../Common/styles/mixin';
 
-.main {
+.segment {
   @include bgColor(0deg);
-  min-height: 100vh;
-  @include container;
-  justify-content: flex-start;
-  flex-direction: column;
+  min-height: 65vh;
 
-  .mainTitle {
-    @include mainTitle;
-  }
+  .block {
+    @include container;
 
-  .projects {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @media screen and (max-width: 1129px) {
-      justify-content: center;
+    .projects {
+      @include worksBox;
+
+      @media screen and (max-width: 1129px) {
+        justify-content: center;
+      }
     }
-  }
 
+
+  }
 }
 
 

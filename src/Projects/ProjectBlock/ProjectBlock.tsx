@@ -10,10 +10,14 @@ const ProjectBlock = (props: ProjectBlockPropsType) => {
     return (
         <div className={styles.project}>
             <div className={styles.imageContainer}>
-                <a className={styles.imageLink}>Open</a>
+                <a className={styles.imageLink}></a>
             </div>
-            <h3>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            <div className={styles.description}>
+                <div className={styles.category}>development</div>
+                <h3 className={styles.name}>{props.title}</h3>
+                <p className={styles.text}>{props.description}</p>
+            </div>
+
         </div>
     );
 };
