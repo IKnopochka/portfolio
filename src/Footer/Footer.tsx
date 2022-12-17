@@ -3,15 +3,29 @@ import styles from './Footer.module.scss'
 
 const Footer = () => {
     return (
-        <div className={styles.main}>
-            <h2 className={styles.mainTitle}>Iryna Nisnevich</h2>
-            <div className={styles.footerPic}>
-                <div className={styles.imageContainer}></div>
-                <div className={styles.imageContainer}></div>
-                <div className={styles.imageContainer}></div>
-                <div className={styles.imageContainer}></div>
+        <div className={styles.segment}>
+            <div className={styles.block}>
+                <div className={`${styles.socialLinks} ${styles.item}`}>
+                    <div className={styles.icon}>
+                            <div className={styles.iconItem}>
+                                <a></a>
+                            </div>
+                    </div>
+                </div>
+                <div className={`${styles.copyright} ${styles.item}`}>
+                    <p>
+                        <b>© 2022 </b>
+                        all rights reserved
+                    </p>
+                </div>
+                <div className={`${styles.developer} ${styles.item}`}>
+                    <p>
+                        developed by
+                        <b> Iryna Nisnevich</b>
+                    </p>
+                </div>
             </div>
-            <h3 className={styles.title}>©2022 All Rights Reserved</h3>
+
         </div>
 
     );

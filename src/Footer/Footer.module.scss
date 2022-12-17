@@ -1,34 +1,75 @@
 @import '../Common/styles/mixin';
+@import '../Common/styles/variable';
 
-.main{
+
+
+.segment {
     @include bgColor(180deg);
+    min-height: 10vh;
 
-    min-height: 25vh;
-    @include container;
-    justify-content: flex-start;
-    flex-direction: column;
 
-    .mainTitle{
-        @include mainTitle
-    }
-
-    .footerPic{
-        border: 1px solid;
-        width: 280px;
+    .block {
+        @include container();
+        padding: 60px 0 60px 0;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         flex-wrap: wrap;
+
+        p {
+            font-family: $fontTitle;
+            cursor: pointer;
+            line-height: 1.7;
+            color: $basicTextColor;
+            padding: 0;
+            margin: 0;
+            display: block;
+            text-indent: 30px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: .05em;
+            b{
+                color: $extraColor
+            }
+        }
+
+        .item{
+            width: 33.333%;
+            align-content: center;
+            align-items: center;
+        }
+
+        .socialLinks{
+            text-align: left;
+        }
+        .copyright{
+            text-align: center;
+        }
+        .developer{
+            text-align: right;
+        }
+    }
+    .icon{
+        width: 22px;
+        height: 22px;
+        .a {
+            margin: 0 15px 0 0;
+            height: 100%;
+            width: 100%
+        }
+        .iconItem{
+             height: 100%;
+             background-color: #eaeaea;
+             -webkit-mask-image: url("../Common/icons/linkedin-svgrepo-com.svg");
+             mask-image: url("../Common/icons/linkedin-svgrepo-com.svg");
+             -webkit-mask-size: 100%;
+             mask-size: 100%;
+             -webkit-mask-repeat: no-repeat;
+             mask-repeat: no-repeat;
+             -webkit-mask-position: 50% 50%;
+             mask-position: 50% 50%;
+         }
     }
 
-    .imageContainer{
-        width: 50px;
-        height: 50px;
-        background-color: lemonchiffon;
-    }
 
-    .title{
-        @include mainTitle;
-    }
 }
-
-

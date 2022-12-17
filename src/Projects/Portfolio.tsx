@@ -1,12 +1,15 @@
 import React from 'react';
 import ProjectBlock from "./ProjectBlock/ProjectBlock";
-import styles from './Projects.module.scss'
+import styles from './Portfolio.module.scss'
 import Title from "../Common/Components/Title";
+import VLineBlock from "../Common/Components/VLineBlock";
+import BgTitle from "../Common/Components/BgTitle";
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         <div className={styles.segment}>
             <div className={styles.block}>
+
                 <Title mainTitle={'Portfolio'} subPronounWord={'my'} subMainWord={'Cases'}/>
                 <div className={styles.projects}>
                     <ProjectBlock title={'Zorro'} description={'ksdjfnks sdsdf sdfsdfsf'}/>
@@ -15,6 +18,9 @@ const Projects = () => {
                     <ProjectBlock title={'Rati'}
                                   description={'efjwgefigwe wegr iugweiufg wieurgf igks sdsdf sdfsdfsf'}/>
                 </div>
+                <BgTitle title={'Portfolio'}/>
+                <VLineBlock/>
+
             </div>
 
         </div>
@@ -22,4 +28,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Portfolio;

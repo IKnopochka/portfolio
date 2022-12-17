@@ -6,12 +6,8 @@ import ContactsInputArea from "./ContactsInputArea/ContactsInputArea";
 const ContactsBlock = () => {
     return (
         <div className={styles.block}>
-            <div>
                 <ContactsInfo/>
-            </div>
-            <div>
                 <ContactsInputArea/>
-            </div>
         </div>
     );
 };

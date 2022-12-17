@@ -2,22 +2,41 @@
 @import '../../../Common/styles/variable';
 
 .inputContainer {
-
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 60%;
 
   form {
-    width: 700px;
-    height: 700px;
-    border: 1px solid;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-content: flex-start;
   }
+
+  div{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x)/2);
+    padding-left: calc(var(--bs-gutter-x)/2);
+    margin-bottom: 30px;
+
+  }
+
 
   input {
     @include inputItem;
   }
+  .rowSm {
+    width: 50%;
+  }
+  .rowLg{
+    width: 100%;
+  }
+
+
 
   textarea {
     @include inputItem;

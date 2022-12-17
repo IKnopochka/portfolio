@@ -1,0 +1,53 @@
+.vLineBlock {
+  left: -100px;
+  right: auto;
+  background: #a3a5a7;
+  position: absolute;
+  top: -70px;
+  bottom: -30px;
+  width: 2px;
+  z-index: 3;
+  pointer-events: none;
+
+  &::before{
+    background: #1d222a;
+    border: 2px solid #a3a5a7;
+    box-shadow: 5px 5px rgb(255 255 255 / 10%);
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 1;
+  }
+
+
+  span{
+    filter: invert(1);
+    opacity: .6;
+    position: absolute;
+    bottom: -188px;
+    left: -168px;
+    width: 226px;
+    height: 226px;
+    background-image: url(https://luique.bslthemes.com/wp-content/themes/luique/assets/images/pat-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  &::after{
+    background: #1d222a;
+    border: 2px solid #a3a5a7;
+    box-shadow: 5px 5px rgb(255 255 255 / 10%);
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 1;
+  }
+}

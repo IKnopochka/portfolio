@@ -2,5 +2,7 @@
 @import '../../Common/styles/variable';
 
 .block {
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

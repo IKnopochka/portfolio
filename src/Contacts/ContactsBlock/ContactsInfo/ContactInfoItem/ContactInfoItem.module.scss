@@ -4,25 +4,9 @@
 .infoItem {
   transform: translate(0, 0);
   opacity: 1;
-
-  .im {
-    height: 240px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    position: relative;
-    overflow: hidden;
-
-    .imageLink {
-    }
-
-
-  }
+  position: relative;
+  padding-left: 130px;
+  margin-bottom: 40px;
 
   .icon {
     border: 2px solid #a3a5a7;
@@ -31,24 +15,22 @@
     -webkit-border-radius: 50%;
     width: 56px;
     height: 56px;
-    position: relative;
-
+    position: absolute;
+    left: 0;
+    top: 0;
 
     .iconItem {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-position: center;
-      overflow: hidden;
-
-      background-size: 50%;
-      background-repeat: no-repeat;
-
-      color: #eaeaea;
-      background-image: url("../../../../Common/icons/map-svgrepo-com.svg");
-
+      height: 100%;
+      background-color: #eaeaea;
+      -webkit-mask-image: url("../../../../Common/icons/map-svgrepo-com.svg");
+      mask-image: url("../../../../Common/icons/map-svgrepo-com.svg");
+      -webkit-mask-size: 50%;
+      mask-size: 50%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: 50% 50%;
+      mask-position: 50% 50%;
     }
-
 
     &::after {
       background: #a3a5a7;
@@ -60,13 +42,6 @@
       width: 40px;
       height: 2px;
       position: absolute;
-    }
-
-    div {
-      width: 55px;
-      height: 55px;
-      background-color: #eaeaea;
-      mask-image: url("../../../../Common/icons/map-svgrepo-com.svg");
     }
   }
 

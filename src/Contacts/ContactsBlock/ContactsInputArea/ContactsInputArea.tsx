@@ -5,25 +5,25 @@ const ContactsInputArea = () => {
     return (
         <div className={styles.inputContainer}>
             <form action="/action_page.php">
-                <div>
+                <div className={styles.rowSm}>
                     <label>
                         Your full name
                         <b> *</b>
-                        <span>
+                        <span className={styles.shorterInput}>
                             <input type="text" id="name" name="name"/>
                         </span>
                     </label>
                 </div>
-                <div>
+                <div className={styles.rowSm}>
                     <label>
                         Your email address
                         <b> *</b>
-                        <span>
+                        <span className={styles.shorterInput}>
                             <input type="email" id="email" name="email"/>
                         </span>
                     </label>
                 </div>
-                <div>
+                <div className={styles.rowLg}>
                     <label>
                         Your subject
                         <b> *</b>
@@ -32,7 +32,7 @@ const ContactsInputArea = () => {
                         </span>
                     </label>
                 </div>
-                <div>
+                <div className={styles.rowLg}>
                     <label>
                         Your Message
                         <b> *</b>

@@ -6,11 +6,6 @@
 
   .block {
     @include container();
-
-
-    .skills {
-      @include worksBox;
-    }
   }
 
 
