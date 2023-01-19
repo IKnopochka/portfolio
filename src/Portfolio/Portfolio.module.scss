@@ -1,0 +1,27 @@
+@import '../Common/styles/mixin';
+
+.segment {
+  min-height: 65vh;
+
+  .block {
+    @include container;
+
+    .projects {
+      @include worksBox;
+
+      @media screen and (max-width: 1129px) {
+        justify-content: center;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+

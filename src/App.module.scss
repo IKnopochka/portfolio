@@ -1,6 +1,23 @@
-App {
+@import "./Common/styles/mixin";
+
+.App > div:nth-child(2n+1) {
+  @include bgColor(180deg);
+}
+
+.App > div:nth-child(2n) {
+  @include bgColor(0deg);
+}
+
+.App > div:nth-child(1) {
+  background-color: $bgColorDarker;
+  background-image: none;
 
 }
+
+.segment {
+  @include vLineBlock(-100, auto);
+}
+
 
 /*
 h1, h2, h3, h4, h5, h6, .m-title {

@@ -1,7 +1,6 @@
 @import '../Common/styles/mixin';
 
 .segment {
-  @include bgColor(0deg);
   min-height: 50vh;
 
   .block {

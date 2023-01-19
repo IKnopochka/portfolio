@@ -1,7 +1,6 @@
 @import "../Common/styles/_mixin.scss";
 
 .segment {
-  @include bgColor(180deg);
   min-height: 65vh;
 
   .block {
@@ -11,8 +10,6 @@
       @include worksBox;
     }
   }
-
-
 }
 
 

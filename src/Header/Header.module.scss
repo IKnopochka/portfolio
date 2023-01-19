@@ -1,9 +1,9 @@
 @import "../Common/styles/variable";
-.header {
-    background-color: $bgColorDarker;
+@import "../Common/styles/mixin";
 
-    height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

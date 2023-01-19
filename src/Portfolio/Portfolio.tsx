@@ -1,9 +1,8 @@
 import React from 'react';
 import ProjectBlock from "./ProjectBlock/ProjectBlock";
 import styles from './Portfolio.module.scss'
-import Title from "../Common/Components/Title";
-import VLineBlock from "../Common/Components/VLineBlock";
-import BgTitle from "../Common/Components/BgTitle";
+import Title from "../Common/components/Title";
+import BackgroundTitle from "../Common/components/BackgroundTitle";
 
 const Portfolio = () => {
     return (
@@ -18,8 +17,7 @@ const Portfolio = () => {
                     <ProjectBlock title={'Rati'}
                                   description={'efjwgefigwe wegr iugweiufg wieurgf igks sdsdf sdfsdfsf'}/>
                 </div>
-                <BgTitle title={'Portfolio'}/>
-                <VLineBlock/>
+                <BackgroundTitle title={'Portfolio'} side={'left'}/>
 
             </div>
 

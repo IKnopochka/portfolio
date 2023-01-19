@@ -1,4 +1,5 @@
 @import '../styles/variable';
+@import '../styles/mixin';
 
 .bgTitle {
   color: rgba(255, 255, 255, .02);
@@ -14,4 +15,10 @@
 
   width: 100%;
 
+}
+.vLineBlockRight{
+  @include vLineBlock(auto, -100px)
+}
+.vLineBlockLeft{
+  @include vLineBlock(-100px, auto)
 }

@@ -1,19 +1,64 @@
 @import '../Common/styles/mixin';
+@import '../Common/styles/variable';
 
-.block{
-    @include bgColor(0deg);
+.segment {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .block {
     @include container();
-    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
 
-    .text{
-        width: 300px;
-        background-color: peachpuff;
+    .aboutMeBlock {
+
+      .title {
+        max-width: 860px;
+        @include mainTitle;
+
+        b {
+          color: $extraColor;
+        }
+
+        .subTitle {
+          span {
+            font-size: 15px;
+          }
+
+          strong {
+            @include subMainWord;
+            text-transform: none;
+            letter-spacing: 0;
+          }
+        }
+
+        .mainTitle {
+          font-size: 90px;
+          text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0 rgb(0 0 0 / 20%);
+        }
+      }
+
+      .description {
+        @include description;
+        padding: 40px 0 40px 0;
+        font-size: 18px;
+        max-width: 520px;
+        margin: 0;
+        opacity: .8;
+        --widgets-spacing: 20px;
+      }
     }
-    .photo{
-         width: 300px;
-         height: 400px;
-         background-color: peachpuff;
-     }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-color: #124f5b;
+    }
+  }
 }
 
+.vLineBlock {
+  @include vLineBlock(-100px, auto)
+}
 

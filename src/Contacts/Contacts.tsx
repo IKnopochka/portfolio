@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Contacts.module.scss'
-import Title from "../Common/Components/Title";
+import Title from "../Common/components/Title";
 import ContactsBlock from "./ContactsBlock/ContactsBlock";
+import BackgroundTitle from "../Common/components/BackgroundTitle";
 
 const Contacts = () => {
     return (
@@ -11,6 +12,7 @@ const Contacts = () => {
                 <div>
                     <ContactsBlock/>
                 </div>
+                <BackgroundTitle title={'Contact me'} side={'right'}/>
             </div>
         </div>
     );
