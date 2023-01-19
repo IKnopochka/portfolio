@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className={`${styles.socialLinks} ${styles.item}`}>
                     <div className={styles.icon}>
                             <div className={styles.iconItem}>
-                                <a></a>
+                                {/*<a href={''}>f</a>*/}
                             </div>
                     </div>
                 </div>
