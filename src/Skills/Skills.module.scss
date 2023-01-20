@@ -1,7 +1,7 @@
 @import "../Common/styles/_mixin.scss";
 
 .segment {
-  min-height: 65vh;
+  min-height: 70vh;
 
   .block {
     @include container();

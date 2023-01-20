@@ -1,7 +1,7 @@
 @import '../Common/styles/mixin';
 
 .segment {
-  min-height: 50vh;
+  min-height: 65vh;
 
   .block {
     @include container();

@@ -1,16 +1,19 @@
 import React from 'react';
 import styles from './Footer.module.scss'
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {library} from "@fortawesome/fontawesome-svg-core";
+import {fab, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+library.add(fab, faLinkedinIn);
+
 const Footer = () => {
     return (
         <div className={styles.segment}>
             <div className={styles.block}>
                 <div className={`${styles.socialLinks} ${styles.item}`}>
-                    <div className={styles.icon}>
-                            <div className={styles.iconItem}>
-                                {/*<a href={''}>f</a>*/}
-                            </div>
-                    </div>
+                        <a href={''} className={styles.icon}>
+                            <FontAwesomeIcon icon={["fab", "linkedin-in"]} className={styles.icon}/>
+                        </a>
                 </div>
                 <div className={`${styles.copyright} ${styles.item}`}>
                     <p>
@@ -25,7 +28,6 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-
         </div>
 
     );

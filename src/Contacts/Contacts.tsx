@@ -9,9 +9,7 @@ const Contacts = () => {
         <div className={styles.segment}>
             <div className={styles.block}>
                 <Title mainTitle={'Contact me'} subPronounWord={'Let\'s'} subMainWord={'Talk About Ideas'}/>
-                <div>
-                    <ContactsBlock/>
-                </div>
+                <ContactsBlock/>
                 <BackgroundTitle title={'Contact me'} side={'right'}/>
             </div>
         </div>
