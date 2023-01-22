@@ -8,14 +8,21 @@
 
   .block {
     @include container();
-    flex-direction: row;
     justify-content: space-around;
+    flex-direction: row;
 
     .aboutMeBlock {
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
       .title {
         max-width: 860px;
         @include mainTitle;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         b {
           color: $extraColor;
@@ -44,21 +51,82 @@
         padding: 40px 0 40px 0;
         font-size: 18px;
         max-width: 520px;
-        margin: 0;
         opacity: .8;
-        --widgets-spacing: 20px;
       }
     }
 
-    .photo {
-      width: 300px;
-      height: 400px;
+    .photoBlock {
+      width: 440px;
+      height: 600px;
       background-color: #124f5b;
+
+      .circle {
+        width: 600px;
+        height: 600px;
+        background: #29a587;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        height: 800px;
+        object-fit: cover;
+        border-radius: 380px;
+        -webkit-border-radius: 380px;
+      }
     }
   }
 }
 
-.vLineBlock {
-  @include vLineBlock(-100px, auto)
+@media screen and (max-width: 1620px) {
+  .segment {
+    .block {
+      flex-direction: column;
+
+      .aboutMeBlock {
+        align-items: center;
+
+        .title {
+          align-items: center;
+
+          .mainTitle {
+            font-size: 64px;
+          }
+        }
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .segment {
+    .block {
+      .aboutMeBlock {
+        .title {
+          display: flex;
+          .mainTitle {
+            font-size: 40px;
+            text-align: center;
+            ;
+          }
+        }
+        .description {
+          text-align: center;
+        }
+      }
+
+      .photoBlock {
+        width: 340px;
+        height: 400px;
+        .circle {
+          width: 340px;
+          height: 340px;
+        }
+      }
+    }
+  }
+}

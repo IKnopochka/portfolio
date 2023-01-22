@@ -2,18 +2,14 @@
 @import "../../Common/styles/variable";
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   a {
-    color: $textColor;
+    @include mainTitle;
     font-size: 22px;
-    line-height: 1;
-    font-family: $fontTitle;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 700;
-    margin: 15px;
+    margin: 10px;
 
     &:hover {
       color: $extraColor;

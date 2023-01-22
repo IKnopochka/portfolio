@@ -2,90 +2,80 @@
 @import '../../../Common/styles/variable';
 
 .inputContainer {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
   width: 60%;
 
   form {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
-    box-sizing: border-box;
-    align-content: flex-start;
-  }
+    justify-content: flex-end;
+    div{
+      --bs-gutter-x: 1.5rem;
+      padding-right: calc(var(--bs-gutter-x)/2);
+      margin-bottom: 30px;
+      label {
+        @include mainTitle;
+        color: $basicTextColor;
+        display: block;
+        text-indent: 30px;
+        font-size: 14px;
+        margin: 0;
 
-  div{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    padding-right: calc(var(--bs-gutter-x)/2);
-    padding-left: calc(var(--bs-gutter-x)/2);
-    margin-bottom: 30px;
+        b {
+          color: $extraColor;
+        }
 
-  }
-
-
-  input {
-    @include inputItem;
-  }
-  .rowSm {
-    width: 50%;
-  }
-  .rowLg{
-    width: 100%;
-  }
-
-
-
-  textarea {
-    @include inputItem;
-    height: 140px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  label {
-    font-family: $fontTitle;
-    cursor: pointer;
-    line-height: 1.7;
-    color: $basicTextColor;
-    padding: 0;
-    display: block;
-    text-indent: 30px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: .05em;
-
-    b {
-      color: $extraColor;
+        .field {
+          @include description;
+          color: $textColor;
+          background: $containerBgColor;
+          border: 2px solid $borderColor;
+          margin: 10px 0 0;
+          padding: 0 30px;
+          width: 100%;
+          height: 60px;
+          resize: none;
+          outline: 0;
+          -webkit-border-radius: 30px;
+        }
+        .textarea {
+          height: 140px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
     }
-  }
+    .rowSm {
+      width: 50%;
+    }
+    .rowLg{
+      width: 100%;
+    }
 
+  }
   button {
-    color: $textColor;
+    @include mainTitle;
     box-shadow: 5px 5px rgb(255 255 255 / 10%);
     padding: 0 40px;
-    position: relative;
     overflow: hidden;
-    display: inline-block;
-    vertical-align: top;
     font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .05em;
     height: 56px;
-    line-height: 52px;
-    text-align: center;
-    text-decoration: none;
-    outline: 0 !important;
     cursor: pointer;
     border: 2px solid $borderColor;
     background: transparent;
     -webkit-border-radius: 56px;
-    margin: 0;
-    font-family: $fontTitle;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .inputContainer {
+    width: 95%;
+    form {
+      flex-direction: column;
+      align-items: flex-end;
+      .rowSm {
+        width: 100%;
+      }
+    }
   }
 }

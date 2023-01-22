@@ -9,17 +9,21 @@
     .projects {
       @include worksBox;
 
-      @media screen and (max-width: 1129px) {
-        justify-content: center;
-      }
+
     }
   }
-
-
 }
 
 
+@media screen and (max-width: 1129px) {
+  .segment {
+    .block {
+      .projects {
 
+      }
+    }
+  }
+}
 
 
 

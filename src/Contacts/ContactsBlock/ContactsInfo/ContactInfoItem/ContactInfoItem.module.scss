@@ -2,8 +2,6 @@
 @import '../../../../Common/styles/_variable.scss';
 
 .infoItem {
-  transform: translate(0, 0);
-  opacity: 1;
   position: relative;
   padding-left: 130px;
   margin-bottom: 40px;
@@ -17,7 +15,6 @@
     height: 56px;
     position: absolute;
     left: 0;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +26,9 @@
 
     &::after {
       background: #a3a5a7;
-      margin-top: -1px;
       content: '';
       box-sizing: border-box;
       left: 100%;
-      top: 50%;
       width: 40px;
       height: 2px;
       position: absolute;
@@ -41,22 +36,13 @@
   }
 
   .title {
-    color: $textColor;
+    @include subMainWord;
     padding: 10px 0;
-    font-family: $fontCurvy;
-    font-size: 30px;
-    line-height: 1;
-    font-weight: 700;
+    margin: 0;
   }
 
   .text {
+    @include description;
     opacity: .8;
-    color: $basicTextColor;
-    font-size: 16px;
-    font-family: $fontTitle;
-    font-weight: 400;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
   }
 }

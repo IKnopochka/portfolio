@@ -9,7 +9,7 @@ const Skills = () => {
         <div className={styles.segment}>
             <div className={styles.block}>
                 <Title mainTitle={'Professional Skills'} subPronounWord={'my'} subMainWord={'Talent'}/>
-                    <div className={styles.skills}>
+                <div className={styles.skills}>
                     <SkillBlock title={"JS"}
                                 description={'djdr hgsd fvsd fsf kj sdhf kshf kj hskhs dkfghkdjg hkjsdhfiu aoudhus s giuh sufhsidrf hsdhsgb'}/>
                     <SkillBlock title={'CSS'} description={'djhbgisfb'}/>
@@ -19,7 +19,7 @@ const Skills = () => {
                     <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
                 </div>
                 <BackgroundTitle title={'Skills'} side={'right'}/>
-                </div>
+            </div>
         </div>
     );
 };

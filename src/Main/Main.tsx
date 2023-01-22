@@ -25,12 +25,11 @@ const Main = () => {
                     </div>
                     <div className={styles.description}>
                         <p>From Minsk, Belarus. I'm very passionate and dedicated to my work.</p>
-
                     </div>
-
-
                 </div>
-                <div className={styles.photo}></div>
+                <div className={styles.photoBlock}>
+                    <span className={styles.circle}></span>
+                </div>
                 <BackgroundTitle title={'Developer'} side={'left'}/>
             </div>
 

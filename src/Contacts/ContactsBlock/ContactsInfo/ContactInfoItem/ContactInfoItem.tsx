@@ -17,10 +17,6 @@ const ContactInfoItem = (props: ContactInfoPropsType) => {
 
         <div className={styles.infoItem}>
             <div className={styles.iconCircle}>
-                {/*<FontAwesomeIcon icon={["fas", "user"]} className={styles.icon}/>
-                <FontAwesomeIcon icon={["far", "address-book"]} className={styles.icon}/>
-                <FontAwesomeIcon icon={["far", "envelope"]} className={styles.icon}/>
-                <FontAwesomeIcon icon={["far", "map"]} className={styles.icon}/>*/}
                 <FontAwesomeIcon icon={props.icon} className={styles.icon}/>
             </div>
             <div className={styles.title}>{props.title}</div>

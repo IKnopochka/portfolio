@@ -12,6 +12,17 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .segment {
+    .block {
+      padding-bottom: 30px;
+      .skills {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 
 
 

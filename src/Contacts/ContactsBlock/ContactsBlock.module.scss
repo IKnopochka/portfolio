@@ -3,6 +3,14 @@
 
 .block {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+  .block {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }

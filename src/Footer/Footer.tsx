@@ -10,18 +10,18 @@ const Footer = () => {
     return (
         <div className={styles.segment}>
             <div className={styles.block}>
-                <div className={`${styles.socialLinks} ${styles.item}`}>
+                <div className={styles.item}>
                         <a href={''} className={styles.icon}>
                             <FontAwesomeIcon icon={["fab", "linkedin-in"]} className={styles.icon}/>
                         </a>
                 </div>
-                <div className={`${styles.copyright} ${styles.item}`}>
+                <div className={styles.item}>
                     <p>
                         <b>© 2022 </b>
                         all rights reserved
                     </p>
                 </div>
-                <div className={`${styles.developer} ${styles.item}`}>
+                <div className={styles.item}>
                     <p>
                         developed by
                         <b> Iryna Nisnevich</b>

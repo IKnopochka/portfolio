@@ -10,10 +10,10 @@ type TitlePropsType = {
 const Title = (props: TitlePropsType) => {
     return (
         <div className={styles.titleContainer}>
-            <h2 className={styles.mainTitle}>{props.mainTitle}</h2>
-            <div className={styles.subTitle}>
-                <span className={styles.pronounWord}>{props.subPronounWord}</span>
-                <span className={styles.mainWord}>{props.subMainWord}</span>
+            <h2>{props.mainTitle}</h2>
+            <div>
+                <span>{props.subPronounWord}</span>
+                <b>{props.subMainWord}</b>
             </div>
         </div>
     );

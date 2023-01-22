@@ -10,7 +10,7 @@ const ContactsInputArea = () => {
                         Your full name
                         <b> *</b>
                         <span className={styles.shorterInput}>
-                            <input type="text" id="name" name="name"/>
+                            <input type="text" id="name" name="name" className={styles.field}/>
                         </span>
                     </label>
                 </div>
@@ -19,7 +19,7 @@ const ContactsInputArea = () => {
                         Your email address
                         <b> *</b>
                         <span className={styles.shorterInput}>
-                            <input type="email" id="email" name="email"/>
+                            <input type="email" id="email" name="email" className={styles.field}/>
                         </span>
                     </label>
                 </div>
@@ -28,7 +28,7 @@ const ContactsInputArea = () => {
                         Your subject
                         <b> *</b>
                         <span>
-                            <input type="text" id="subject" name="subject"/>
+                            <input type="text" id="subject" name="subject" className={styles.field}/>
                         </span>
                     </label>
                 </div>
@@ -37,7 +37,7 @@ const ContactsInputArea = () => {
                         Your Message
                         <b> *</b>
                         <span>
-                            <textarea/>
+                            <textarea className={`${styles.field} ${styles.textarea}`}/>
                         </span>
                     </label>
                 </div>

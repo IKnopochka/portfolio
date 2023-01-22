@@ -8,7 +8,6 @@ const Portfolio = () => {
     return (
         <div className={styles.segment}>
             <div className={styles.block}>
-
                 <Title mainTitle={'Portfolio'} subPronounWord={'my'} subMainWord={'Cases'}/>
                 <div className={styles.projects}>
                     <ProjectBlock title={'Zorro'} description={'ksdjfnks sdsdf sdfsdfsf'}/>

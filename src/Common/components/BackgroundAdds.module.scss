@@ -12,13 +12,33 @@
   text-align: center;
   white-space: nowrap;
   pointer-events: none;
+}
 
-  width: 100%;
+@media screen and (min-width: 1600px) {
+  .vLineBlockRight{
+    @include vLineBlock(auto, -100px)
+  }
+  .vLineBlockLeft{
+    @include vLineBlock(-100px, auto)
+  }
 
 }
-.vLineBlockRight{
-  @include vLineBlock(auto, -100px)
+
+@media screen and (max-width: 1620px) {
+  .bgTitle{
+    font-size: 200px;
+  }
 }
-.vLineBlockLeft{
-  @include vLineBlock(-100px, auto)
+
+@media screen and (max-width: 800px) {
+  .bgTitle{
+    font-size: 150px;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .bgTitle{
+    font-size: 80px;
+
+  }
 }
