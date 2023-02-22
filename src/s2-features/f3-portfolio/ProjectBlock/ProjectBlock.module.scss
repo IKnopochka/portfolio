@@ -1,0 +1,74 @@
+@import "../../../s1-main/m1-ui/styles/variable";
+@import "../../../s1-main/m1-ui/styles/mixin";
+
+.project {
+
+  width: 30%;
+  background-color: $fillBgColor;
+  margin: 0 auto 70px auto;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .image {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+
+
+    a {
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        object-fit: cover;
+        transition: all .6s cubic-bezier(.3,0,.3,1);
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .description {
+    @include title;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 30px 0 0 0;
+
+    .category {
+      font-size: 13px;
+      color: $extraColor;
+      margin-bottom: 5px;
+
+    }
+
+    .name {
+      margin: 0;
+      font-size: 24px;
+      text-transform: none;
+    }
+
+    .text {
+      min-height: 125px;
+      padding: 0;
+      margin: 30px 0;
+      color: $descriptionTextColor;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+      text-transform: none;
+    }
+  }
+}

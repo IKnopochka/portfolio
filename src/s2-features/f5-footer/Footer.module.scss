@@ -1,0 +1,41 @@
+@import '../../s1-main/m1-ui/styles/mixin';
+@import '../../s1-main/m1-ui/styles/variable';
+
+.segment {
+  min-height: 10vh;
+
+  .block {
+    @include container();
+    padding: 60px 0 60px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .item {
+      @media screen and (max-width: 767px) {
+        padding: 10px;
+      }
+
+      p {
+        @include description();
+        cursor: pointer;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .05em;
+
+        b {
+          color: $extraColor
+        }
+      }
+
+      .icon {
+        width: 22px;
+        height: 22px;
+        color: $descriptionTextColor;
+      }
+    }
+  }
+}

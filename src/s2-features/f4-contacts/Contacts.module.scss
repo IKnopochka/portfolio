@@ -1,0 +1,25 @@
+@import '../../s1-main/m1-ui/styles/mixin';
+
+.segment {
+  min-height: 65vh;
+
+  .block {
+    @include container;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .segment{
+    .block{
+      //flex-direction: row;
+
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+}

@@ -1,0 +1,28 @@
+@import "../../s1-main/m1-ui/styles/mixin";
+
+.segment {
+  min-height: 70vh;
+
+  .block {
+    @include container();
+
+    .skills {
+      @include worksBox;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .segment {
+    .block {
+      padding-bottom: 30px;
+      .skills {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,47 @@
+@import "../styles/mixin";
+
+.titleContainer {
+
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2 {
+    @include title;
+  }
+
+  span {
+    color: $extraColor;
+    font-family: $fontTitle;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  b {
+    @include subMainWord;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titleContainer {
+    margin-bottom: 30px;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 34px;
+    }
+
+    b {
+      font-size: 24px;
+    }
+  }
+}
+

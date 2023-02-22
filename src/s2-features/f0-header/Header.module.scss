@@ -1,0 +1,25 @@
+@import "../../s1-main/m1-ui/styles/variable";
+@import "../../s1-main/m1-ui/styles/mixin";
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    a {
+      @include title;
+      font-size: 22px;
+      text-decoration: none;
+      margin: 10px;
+
+      &:hover {
+        color: $extraColor;
+      }
+    }
+  }
+}
