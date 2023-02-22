@@ -7,7 +7,7 @@ import {Fade} from "react-awesome-reveal";
 
 const Portfolio = () => {
     return (
-        <div className={styles.segment}>
+        <div id={'portfolio'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
                     <Title mainTitle={'Portfolio'} subPronounWord={'my'} subMainWord={'Cases'}/>

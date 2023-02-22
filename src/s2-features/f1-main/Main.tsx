@@ -6,7 +6,7 @@ import photo from '../../s1-main/m1-ui/images/2021-05-05 09-22-52_1621114670381 
 
 const Main = () => {
     return (
-        <div className={styles.segment}>
+        <div id={'main'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
                     <div className={styles.aboutMeBlock}>

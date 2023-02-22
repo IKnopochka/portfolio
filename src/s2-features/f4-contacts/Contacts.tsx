@@ -7,7 +7,7 @@ import {Fade} from "react-awesome-reveal";
 
 const Contacts = () => {
     return (
-        <div className={styles.segment}>
+        <div id={'contacts'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
                     <Title mainTitle={'Contact me'} subPronounWord={'Let\'s'} subMainWord={'Talk About Ideas'}/>

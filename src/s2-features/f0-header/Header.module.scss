@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +17,12 @@
       font-size: 22px;
       text-decoration: none;
       margin: 10px;
+      color:$primaryTextColor;
 
       &:hover {
+        color: $extraColor;
+      }
+      .active{
         color: $extraColor;
       }
     }

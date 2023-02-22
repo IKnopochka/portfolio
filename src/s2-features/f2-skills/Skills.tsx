@@ -7,7 +7,7 @@ import {Fade} from "react-awesome-reveal";
 
 const Skills = () => {
     return (
-        <div className={styles.segment}>
+        <div id={'skills'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
                     <Title mainTitle={'Professional skills'} subPronounWord={'my'} subMainWord={'Talent'}/>
