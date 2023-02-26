@@ -1,0 +1,96 @@
+@import '../../../s1-main/m1-ui/styles/_variable.scss';
+@import '../../../s1-main/m1-ui/styles/mixin.scss';
+
+.background {
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.sidebar {
+  display: none;
+
+}
+
+.open {
+  display: flex;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 515px;
+  position: fixed;
+  background-color: $bgColorLighter;
+  z-index: 2;
+  flex-direction: column;
+  @media screen and (max-width: 516px) {
+    width: 100vw;
+  }
+
+
+  .close {
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: none;
+    outline: none;
+    z-index: 1;
+
+    img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin: 25px 30px 10px 10px;
+    }
+  }
+
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      a {
+        @include title;
+        font-size: 22px;
+        text-decoration: none;
+        margin: 10px;
+        color: $primaryTextColor;
+
+        &:hover {
+          color: $extraColor;
+        }
+
+        .active {
+          color: $extraColor;
+        }
+      }
+
+      .vLineBlock {
+        @include vLineBlock(0px, auto);
+        z-index: 5;
+        position: relative;
+        &:before, &:after {
+          display: none;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+

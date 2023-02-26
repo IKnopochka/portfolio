@@ -2,29 +2,34 @@
 @import "../../s1-main/m1-ui/styles/mixin";
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    a {
-      @include title;
-      font-size: 22px;
-      text-decoration: none;
-      margin: 10px;
-      color:$primaryTextColor;
-
-      &:hover {
-        color: $extraColor;
-      }
-      .active{
-        color: $extraColor;
-      }
-    }
-  }
+  //.nav {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: space-around;
+  //
+  //  a {
+  //    @include title;
+  //    font-size: 22px;
+  //    text-decoration: none;
+  //    margin: 10px;
+  //    color:$primaryTextColor;
+  //
+  //    &:hover {
+  //      color: $extraColor;
+  //    }
+  //    .active{
+  //      color: $extraColor;
+  //    }
+  //  }
+  //}
 }

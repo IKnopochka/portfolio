@@ -17,7 +17,8 @@ const BackgroundTitle = (props: backgroundPropsType) => {
                 </div> :
                 <div className={styles.vLineBlockRight}>
                     <span></span>
-                </div>}
+                </div>
+            }
         </div>
 
     );
