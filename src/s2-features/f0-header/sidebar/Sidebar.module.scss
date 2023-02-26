@@ -12,11 +12,11 @@
 }
 
 .sidebar {
-  display: none;
+  //display: none;
 
-}
+  transition: all 1s cubic-bezier(.3, 0, .3, 1);
+  transform: translate(700px, 0px);
 
-.open {
   display: flex;
   top: 0;
   right: 0;
@@ -27,9 +27,8 @@
   z-index: 2;
   flex-direction: column;
   @media screen and (max-width: 516px) {
-    width: 100vw;
+    width: 130vw;
   }
-
 
   .close {
     position: relative;
@@ -80,16 +79,20 @@
 
       .vLineBlock {
         @include vLineBlock(0px, auto);
-        z-index: 5;
+
         position: relative;
+
         &:before, &:after {
           display: none;
         }
       }
-
     }
-
   }
+}
+
+.open {
+  transform: translate(0);
+
 }
 
 
