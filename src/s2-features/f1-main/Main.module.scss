@@ -6,16 +6,29 @@
   display: flex;
   align-items: center;
 
+
   .block {
     @include container();
     justify-content: space-around;
     flex-direction: row;
+
+    @media screen and (max-width: 1620px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+      margin-top: 50px;
+    }
 
     .aboutMeBlock {
 
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      @media screen and (max-width: 1620px) {
+        align-items: center;
+      }
+
 
       .title {
         max-width: 860px;
@@ -23,6 +36,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        @media screen and (max-width: 1620px) {
+          align-items: center;
+        }
 
         b {
           color: $extraColor;
@@ -43,6 +59,14 @@
         .mainTitle {
           font-size: 90px;
           text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0 rgb(0 0 0 / 20%);
+          @media screen and (max-width: 1620px) {
+            font-size: 64px;
+          }
+          @media screen and (max-width: 767px) {
+            font-size: 40px;
+            text-align: center;
+          }
+
         }
       }
 
@@ -52,86 +76,48 @@
         font-size: 18px;
         max-width: 520px;
         opacity: .8;
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
       }
     }
 
     .photoBlock {
       width: 440px;
       height: 680px;
-      background-color: #124f5b;
+      position: relative;
+      @media screen and (max-width: 767px) {
+        width: 340px;
+        height: 400px;
+      }
 
       .circle {
+        position: absolute;
         width: 600px;
         height: 600px;
         background: #29a587;
         border-radius: 100%;
         -webkit-border-radius: 100%;
-        position: absolute;
         bottom: 0;
+        @media screen and (max-width: 767px) {
+          width: 340px;
+          height: 340px;
+        }
       }
 
       img {
         position: absolute;
         bottom: 0;
-        left: 9%;
+        right: -149px;
         height: 100%;
 
         object-fit: cover;
-        border-radius: 380px;
-        -webkit-border-radius: 380px;
+        border-radius: 280px;
 
         border: none;
         box-shadow: none;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1620px) {
-  .segment {
-    .block {
-      flex-direction: column;
-
-      .aboutMeBlock {
-        align-items: center;
-
-        .title {
-          align-items: center;
-
-          .mainTitle {
-            font-size: 64px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .segment {
-    .block {
-      .aboutMeBlock {
-        .title {
-          display: flex;
-
-          .mainTitle {
-            font-size: 40px;
-            text-align: center;;
-          }
-        }
-
-        .description {
-          text-align: center;
-        }
-      }
-
-      .photoBlock {
-        width: 340px;
-        height: 400px;
-
-        .circle {
-          width: 340px;
-          height: 340px;
+        @media screen and (max-width: 767px) {
+          right: -2px;
         }
       }
     }

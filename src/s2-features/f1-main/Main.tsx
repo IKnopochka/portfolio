@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Main.module.scss'
 import BackgroundTitle from "../../s1-main/m1-ui/components/BackgroundTitle";
 import {Fade} from "react-awesome-reveal";
-import photo from '../../s1-main/m1-ui/images/2021-05-05 09-22-52_1621114670381 copy.png'
+// import photo from '../../s1-main/m1-ui/images/MainPhoto copy.png'
+import photo from '../../s1-main/m1-ui/images/mainPhotoSelfie copy.png'
 
 const Main = () => {
     return (
@@ -32,7 +33,7 @@ const Main = () => {
                     </div>
                     <div className={styles.photoBlock}>
                         <span className={styles.circle}></span>
-                        {/*        <img src={photo}/>*/}
+                        <img src={photo}/>
                     </div>
                 </Fade>
                     <BackgroundTitle title={'Developer'} side={'left'}/>
