@@ -6,15 +6,16 @@ import Skills from "../s2-features/f2-skills/Skills";
 import Portfolio from "../s2-features/f3-portfolio/Portfolio";
 import Contacts from "../s2-features/f4-contacts/Contacts";
 import Footer from "../s2-features/f5-footer/Footer";
+import {storePropsType} from "./m2-bll/store";
 
-function App() {
+function App({store}: { store: storePropsType }) {
     return (
         <div className={styles.App}>
             <Header/>
-            <Main/>
-            <Skills/>
-            <Portfolio/>
-            <Contacts/>
+            <Main main={store.main}/>
+            <Skills skills={store.skills}/>
+            <Portfolio portfolio={store.portfolio}/>
+            <Contacts contacts={store.contacts}/>
             <Footer/>
         </div>
     );

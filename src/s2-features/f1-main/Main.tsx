@@ -2,10 +2,9 @@ import React from 'react';
 import styles from './Main.module.scss'
 import BackgroundTitle from "../../s1-main/m1-ui/components/BackgroundTitle";
 import {Fade} from "react-awesome-reveal";
-// import photo from '../../s1-main/m1-ui/images/MainPhoto copy.png'
-import photo from '../../s1-main/m1-ui/images/mainPhotoSelfie copy.png'
+import {MainPropsType} from "../../s1-main/m2-bll/store";
 
-const Main = () => {
+const Main = (props: { main: MainPropsType }) => {
     return (
         <div id={'main'} className={styles.segment}>
             <div className={styles.block}>
@@ -18,25 +17,25 @@ const Main = () => {
                             </span>
                             </div>
                             <h1 className={styles.mainTitle}>
-                                <b>Iryna </b>
-                                <span>Nisnevich</span>
+                                <b>{props.main.name}</b>
+                                <span>{props.main.surname}</span>
                             </h1>
                             <div className={styles.subTitle}>
                             <span>I am
-                            <strong> Front-End Developer</strong>
+                            <strong>{props.main.profession}</strong>
                             </span>
                             </div>
                         </div>
                         <div className={styles.description}>
-                            <p>From Minsk, Belarus. I'm very passionate and dedicated to my work.</p>
+                            <p>{props.main.aboutMe}</p>
                         </div>
                     </div>
                     <div className={styles.photoBlock}>
                         <span className={styles.circle}></span>
-                        <img src={photo}/>
+                        <img src={props.main.photo}/>
                     </div>
                 </Fade>
-                    <BackgroundTitle title={'Developer'} side={'left'}/>
+                    <BackgroundTitle title={props.main.backgroundTitle} side={'left'}/>
 
             </div>
 

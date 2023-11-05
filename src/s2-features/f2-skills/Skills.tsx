@@ -4,24 +4,22 @@ import SkillBlock from "./Skill/SkillBlock";
 import Title from "../../s1-main/m1-ui/components/Title";
 import BackgroundTitle from "../../s1-main/m1-ui/components/BackgroundTitle";
 import {Fade} from "react-awesome-reveal";
+import {SegmentPropsType} from "../../s1-main/m2-bll/store";
 
-const Skills = () => {
+const Skills = (props: { skills: SegmentPropsType }) => {
     return (
         <div id={'skills'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
-                    <Title mainTitle={'Professional skills'} subPronounWord={'my'} subMainWord={'Talent'}/>
+                    <Title mainTitle={props.skills.title.mainTitle}
+                           subPronounWord={props.skills.title.subWord}
+                           subMainWord={props.skills.title.subMainWord}/>
                     <div className={styles.skills}>
-                        <SkillBlock title={"JS"}
-                                    description={'djdr hgsd fvsd fsf kj sdhf kshf kj hskhs dkfghkdjg hkjsdhfiu aoudhus s giuh sufhsidrf hsdhsgb'}/>
-                        <SkillBlock title={'CSS'} description={'djhbgisfb'}/>
-                        <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
-                        <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
-                        <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
-                        <SkillBlock title={'React'} description={'djhbwsdfgsf aefdhdgdfsdffb'}/>
+                        {props.skills.block.map(b => <SkillBlock title={b.title} description={b.description}
+                                                                 value={b.value}/>)}
                     </div>
                 </Fade>
-                    <BackgroundTitle title={'Skills'} side={'right'}/>
+                <BackgroundTitle title={props.skills.backgroundTitle} side={'right'}/>
 
             </div>
         </div>

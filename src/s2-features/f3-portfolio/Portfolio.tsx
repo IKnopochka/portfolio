@@ -4,22 +4,20 @@ import styles from './Portfolio.module.scss'
 import Title from "../../s1-main/m1-ui/components/Title";
 import BackgroundTitle from "../../s1-main/m1-ui/components/BackgroundTitle";
 import {Fade} from "react-awesome-reveal";
+import {SegmentPropsType} from "../../s1-main/m2-bll/store";
 
-const Portfolio = () => {
+const Portfolio = (props: {portfolio: SegmentPropsType}) => {
     return (
         <div id={'portfolio'} className={styles.segment}>
             <div className={styles.block}>
                 <Fade>
-                    <Title mainTitle={'Portfolio'} subPronounWord={'my'} subMainWord={'Cases'}/>
+                    <Title mainTitle={props.portfolio.title.mainTitle} subPronounWord={props.portfolio.title.subWord} subMainWord={props.portfolio.title.subMainWord}/>
                     <div className={styles.projects}>
-                        <ProjectBlock title={'Zorro'} description={'ksdjfnks sdsdf sdfsdfsf'}/>
-                        <ProjectBlock title={'Gooff'}
-                                      description={'efjwgefigwe wegr iugweiufg wieurgf igks sdsdf sdfsdfsf'}/>
-                        <ProjectBlock title={'Rati'}
-                                      description={'efjwgefigwe wegr iugweiufg wieurgf igks sdsdf sdfsdfsf'}/>
+                        {props.portfolio.block.map(b => <ProjectBlock title={b.title} description={b.description}
+                                                                 value={b.description}/>)}
                     </div>
                 </Fade>
-                    <BackgroundTitle title={'Portfolio'} side={'left'}/>
+                    <BackgroundTitle title={props.portfolio.backgroundTitle} side={'left'}/>
 
             </div>
 
