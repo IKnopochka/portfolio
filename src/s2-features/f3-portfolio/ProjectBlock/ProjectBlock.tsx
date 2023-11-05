@@ -9,7 +9,7 @@ const ProjectBlock = (props: BlockPropsType) => {
         <div className={styles.project}>
             <Fade>
                 <div className={styles.image}>
-                    <a>
+                    <a href={props.link}>
                         <img src={props.img}/>
                         <span className={styles.overlay}></span>
                     </a>

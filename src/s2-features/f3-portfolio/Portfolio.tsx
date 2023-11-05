@@ -14,7 +14,7 @@ const Portfolio = (props: {portfolio: SegmentPropsType}) => {
                     <Title mainTitle={props.portfolio.title.mainTitle} subPronounWord={props.portfolio.title.subWord} subMainWord={props.portfolio.title.subMainWord}/>
                     <div className={styles.projects}>
                         {props.portfolio.block.map(b => <ProjectBlock title={b.title} description={b.description}
-                                                                 value={b.description}/>)}
+                                                                 value={b.value} img={b.img} link={b.link}/>)}
                     </div>
                 </Fade>
                     <BackgroundTitle title={props.portfolio.backgroundTitle} side={'left'}/>

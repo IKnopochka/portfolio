@@ -1,4 +1,7 @@
 import mainPhoto from '../m1-ui/images/mainPhotoSelfie copy.png'
+import cardsImg from '../m1-ui/images/CardsImg.png'
+import socialWebsiteImg from '../m1-ui/images/SocialWebsiteImg.png'
+import todolistImg from '../m1-ui/images/TodolistImg.png'
 
 export const store = {
     main: {
@@ -42,13 +45,30 @@ export const store = {
             subMainWord: 'Cases'
         },
         block: [
-            {title: 'CARDS APP', description: 'React, Redux, Redux-Thunk, TypeScript, Axios, React-\n' +
-                    'router-dom, Formik, SCSS, GIT', value: 'development', img: "https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"},
-            {title: 'Social Network', description: 'React, Redux, Redux-Thunk, TypeScript, Axios, React-\n' +
-                    'router-dom, Jest, SCSS', value: 'development', img: "https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"},
-            {title: 'Todolist', description: 'React, Redux, TypeScript, React-router-dom, Jest,\n' +
-                    'Storybook, Axios, Formik, MaterialUI.', value: 'development', img: "https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"},
-
+            {
+                title: 'CARDS APP',
+                description: 'React, Redux, Redux-Thunk, TypeScript, Axios, React-\n' +
+                    'router-dom, Formik, SCSS, GIT',
+                value: 'development',
+                img: cardsImg,
+                link: 'https://iknopochka.github.io/cards_project/'
+            },
+            {
+                title: 'Social Network',
+                description: 'React, Redux, Redux-Thunk, TypeScript, Axios, React-\n' +
+                    'router-dom, Jest, SCSS',
+                value: 'development',
+                img: socialWebsiteImg,
+                link: 'https://iknopochka.github.io/social_website/'
+            },
+            {
+                title: 'Todolist',
+                description: 'React, Redux, TypeScript, React-router-dom, Jest,\n' +
+                    'Storybook, Axios, Formik, MaterialUI.',
+                value: 'development',
+                img: todolistImg,
+                link: 'https://iknopochka.github.io/todolist/'
+            }
         ],
         backgroundTitle: 'Skills'
     } as SegmentPropsType,
@@ -92,5 +112,6 @@ export type BlockPropsType = {
     title: string,
     description: string,
     value: number | string | string[]
-    img?: string
+    img?: string,
+    link?: string
 }
