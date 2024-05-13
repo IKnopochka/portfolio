@@ -79,7 +79,7 @@ export const store = {
             subMainWord: 'Talk About Ideas'
         },
         block: [
-            {title: "Address", description: 'Los Angeles, USA', value: ["far", "user"]},
+            {title: "Address", description: 'Santa Monica, USA', value: ["far", "user"]},
             {title: "Freelance", description: 'Available Right Now', value: ["far", "address-book"]},
             {title: "Email", description: 'irynanisnevich@gmail.com', value: ["far", "envelope"]},
             {title: "Phone", description: '+1 (310) 926-3032', value: ["far", "map"]},
