@@ -61,14 +61,14 @@ export const store = {
                 img: socialWebsiteImg,
                 link: 'https://iknopochka.github.io/social_website/'
             },
-            {
-                title: 'Todolist',
-                description: 'React, Redux, TypeScript, React-router-dom, Jest,\n' +
-                    'Storybook, Axios, Formik, MaterialUI.',
-                value: 'development',
-                img: todolistImg,
-                link: 'https://iknopochka.github.io/todolist/'
-            }
+            // {
+            //     title: 'Todolist',
+            //     description: 'React, Redux, TypeScript, React-router-dom, Jest,\n' +
+            //         'Storybook, Axios, Formik, MaterialUI.',
+            //     value: 'development',
+            //     img: todolistImg,
+            //     link: 'https://iknopochka.github.io/todolist/'
+            // }
         ],
         backgroundTitle: 'Skills'
     } as SegmentPropsType,
